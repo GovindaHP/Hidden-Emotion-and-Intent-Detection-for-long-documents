@@ -1,0 +1,282 @@
+{
+  "dataset_info": {
+    "name": "Comprehensive Document Intent Classification Dataset",
+    "version": "3.0",
+    "description": "Multi-domain dataset mapping document semantics, long-range objectives, and contextual goals to distinct intent categories.",
+    "total_intents": 12
+  },
+  "intents": {
+    "Product Return & Refund Request": {
+      "keywords": [
+        "return the item",
+        "return the product",
+        "appropriate refund",
+        "receive a refund",
+        "money back",
+        "refund",
+        "reimbursement",
+        "return money",
+        "cancel order",
+        "chargeback",
+        "payback",
+        "return procedure",
+        "full refund",
+        "unfortunate purchase",
+        "handled according to",
+        "applicable policy",
+        "return and refund",
+        "send it back",
+        "return process",
+        "get my money back",
+        "return for refund",
+        "return"
+      ],
+      "description": "User wants to return a purchased product or service and receive a full or partial refund/reimbursement.",
+      "sample_phrases": [
+        "I believe returning the product and receiving the appropriate refund is the most practical way to achieve that.",
+        "I would rather return the item through the proper procedure and have the amount I paid handled according to the applicable policy.",
+        "Please initiate the return process and issue a complete refund for this defective product."
+      ],
+      "simple_reason": "The author wants to return the item and receive a full refund because the product failed to meet expectations despite troubleshooting."
+    },
+    "Academic & Institutional Grievance": {
+      "keywords": [
+        "college",
+        "school",
+        "university",
+        "campus",
+        "teacher",
+        "teachers",
+        "faculty",
+        "professor",
+        "management fee",
+        "strict rules",
+        "permission to go out",
+        "extra class",
+        "saturday class",
+        "opinion of students",
+        "cannot code",
+        "computer science",
+        "education quality",
+        "curriculum",
+        "attendance",
+        "campus building",
+        "hostel",
+        "management",
+        "tuition",
+        "administration"
+      ],
+      "description": "User is raising formal complaints and grievances regarding college/school management, strict rules, teacher competence, or academic policies.",
+      "sample_phrases": [
+        "There are too many strict rules and teachers do not teach properly.",
+        "The management charges huge fees but Saturday classes are a waste of time and teachers don't know basic coding.",
+        "Please take the opinion of students into consideration regarding college policies."
+      ],
+      "simple_reason": "The author is lodging a serious grievance against institutional policies, administrative restrictions, and teaching quality."
+    },
+    "Product Defect & Quality Complaint": {
+      "keywords": [
+        "damaged",
+        "broken",
+        "faulty",
+        "defective",
+        "poor quality",
+        "worst product",
+        "hardware defect",
+        "flawed",
+        "substandard",
+        "unacceptable build",
+        "fell apart",
+        "malfunctioning",
+        "inferior quality"
+      ],
+      "description": "User is lodging a complaint specifically focusing on a broken, damaged, or poor quality physical or digital product.",
+      "sample_phrases": [
+        "The item arrived broken and defective right out of the box.",
+        "The build quality is completely unacceptable and broke during normal use."
+      ],
+      "simple_reason": "The author is formally complaining about severe physical or operational product defects and poor quality."
+    },
+    "Technical Support & Troubleshooting": {
+      "keywords": [
+        "error code",
+        "crash log",
+        "system bug",
+        "cannot login",
+        "failed to launch",
+        "software glitch",
+        "installation error",
+        "how to configure",
+        "patch",
+        "troubleshoot guide",
+        "connection timeout",
+        "app freezing",
+        "syntax error",
+        "runtime issue"
+      ],
+      "description": "User is currently experiencing an unresolved software/hardware bug and actively seeking technical troubleshooting assistance.",
+      "sample_phrases": [
+        "The software crashes immediately with error code 0x80004005 upon startup.",
+        "I need help configuring my network settings to connect properly."
+      ],
+      "simple_reason": "The author is facing a technical error or software issue and requires technical assistance."
+    },
+    "Service Cancellation & Account Termination": {
+      "keywords": [
+        "cancel subscription",
+        "terminate account",
+        "close my account",
+        "cancel membership",
+        "stop renewal",
+        "opt out",
+        "discontinue service",
+        "delete account"
+      ],
+      "description": "User wants to immediately cancel their recurring subscription, membership, or account service.",
+      "sample_phrases": [
+        "I want to cancel my annual subscription and close my account immediately.",
+        "Please ensure auto-renewal is disabled and terminate my membership."
+      ],
+      "simple_reason": "The author is requesting the immediate termination of their account and cancellation of recurring services."
+    },
+    "Billing & Payment Dispute": {
+      "keywords": [
+        "overcharged",
+        "double charged",
+        "unauthorized transaction",
+        "hidden fee",
+        "billing error",
+        "wrong invoice",
+        "charged twice",
+        "pricing discrepancy"
+      ],
+      "description": "User is disputing an incorrect charge, unrecognized payment, or erroneous invoice.",
+      "sample_phrases": [
+        "I was charged twice on my credit card statement for the same order.",
+        "There is an unexpected hidden fee on my latest billing invoice."
+      ],
+      "simple_reason": "The author is disputing an erroneous charge and seeking an immediate billing correction."
+    },
+    "Legal Dispute & Contract Notice": {
+      "keywords": [
+        "lawyer",
+        "legal counsel",
+        "attorney",
+        "court",
+        "breach of contract",
+        "liability",
+        "sue",
+        "lawsuit",
+        "damages",
+        "statutory rights",
+        "formal claim",
+        "arbitration"
+      ],
+      "description": "User is citing statutory rights, contract terms, or formally notifying of impending legal arbitration.",
+      "sample_phrases": [
+        "This is a formal notice of contract breach prior to escalating to legal litigation.",
+        "My attorney will contact your legal department if damages are not settled."
+      ],
+      "simple_reason": "The author is notifying of a legal dispute and reserving rights for formal legal action."
+    },
+    "Medical & Health Inquiry": {
+      "keywords": [
+        "doctor",
+        "health",
+        "hospital",
+        "pain",
+        "symptom",
+        "treatment",
+        "anxiety",
+        "medication",
+        "disease",
+        "patient",
+        "diagnosis",
+        "dosage",
+        "clinical"
+      ],
+      "description": "User is describing health symptoms or clinical issues and seeking medical advice or care.",
+      "sample_phrases": [
+        "I am experiencing persistent pain and need guidance on medication dosage.",
+        "What are the clinical recommendations for managing these symptoms?"
+      ],
+      "simple_reason": "The author is asking for medical advice and clinical clarification regarding symptoms."
+    },
+    "Workplace & Employment Grievance": {
+      "keywords": [
+        "workplace",
+        "manager",
+        "employer",
+        "salary delay",
+        "overtime",
+        "harassment",
+        "working conditions",
+        "resignation",
+        "hr department",
+        "employment contract",
+        "bonus"
+      ],
+      "description": "User is reporting workplace conditions, managerial unfairness, compensation issues, or HR grievances.",
+      "sample_phrases": [
+        "I am writing regarding unpaid overtime hours and toxic working conditions.",
+        "Management has failed to address safety and compensation issues in our department."
+      ],
+      "simple_reason": "The author is raising a formal workplace grievance regarding management, compensation, or conditions."
+    },
+    "Feature Request & Product Feedback": {
+      "keywords": [
+        "suggestion",
+        "feature request",
+        "feedback",
+        "improvement idea",
+        "enhance UI",
+        "dark mode option",
+        "user experience",
+        "would love to see",
+        "feature proposal"
+      ],
+      "description": "User is offering constructive ideas, UX suggestions, or feature requests to improve a product.",
+      "sample_phrases": [
+        "I really like the application and suggest adding a batch export feature in the next update.",
+        "It would greatly improve user experience if you introduced customizable themes."
+      ],
+      "simple_reason": "The author is providing constructive feedback and suggestions for future product improvements."
+    },
+    "Order Tracking & Delivery Status": {
+      "keywords": [
+        "status of order",
+        "tracking number",
+        "delivery date",
+        "when will it arrive",
+        "shipping delay",
+        "transit status",
+        "estimated arrival",
+        "package location"
+      ],
+      "description": "User is asking for an update on shipping progress, delivery date, or consignment status.",
+      "sample_phrases": [
+        "Where is my package? The tracking number shows no movement for a week.",
+        "Please provide the updated delivery date for order #48291."
+      ],
+      "simple_reason": "The author is requesting real-time shipping and delivery status updates for their order."
+    },
+    "General Information Inquiry": {
+      "keywords": [
+        "inquiry",
+        "how does it work",
+        "documentation",
+        "more details",
+        "information regarding",
+        "explain policy",
+        "guidelines",
+        "clarification on"
+      ],
+      "description": "User is making a general informational inquiry seeking guidance, policy clarification, or answers.",
+      "sample_phrases": [
+        "Could you provide more information regarding your terms of service?",
+        "I would like clarification on how the onboarding process works."
+      ],
+      "simple_reason": "The author is seeking information, guidance, or clarification on specific policies or procedures."
+    }
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "dataset_info": {
+    "name": "Psychological Emotion & Trajectory Classification Dataset",
+    "version": "3.0",
+    "description": "Lexicons and psychological hidden emotion rules accounting for emotional transitions, surface politeness vs latent state, and long-range trajectories.",
+    "total_emotions": 7
+  },
+  "emotion_categories": {
+    "anger": {
+      "display_name": "Frustration & Anger",
+      "keywords": [
+        "frustrated",
+        "frustration",
+        "furious",
+        "annoyed",
+        "irritation",
+        "irritating",
+        "unacceptable",
+        "terrible",
+        "outraged",
+        "fail",
+        "broken",
+        "ridiculous",
+        "hate",
+        "scam",
+        "incompetent",
+        "demand",
+        "horrible",
+        "awful",
+        "useless",
+        "waste of time",
+        "waste",
+        "dumb",
+        "consumed hours",
+        "waste of time",
+        "repeatedly asked",
+        "inconsistent",
+        "inconsistently",
+        "back and forth",
+        "persists",
+        "problem returned"
+      ],
+      "weight": 1.25
+    },
+    "sadness": {
+      "display_name": "Disappointment & Exhaustion",
+      "keywords": [
+        "depressed",
+        "hopeless",
+        "sad",
+        "disappointed",
+        "disappointment",
+        "regret",
+        "heartbroken",
+        "loss",
+        "grief",
+        "pain",
+        "failure",
+        "miserable",
+        "lonely",
+        "exhausted",
+        "exhaustion",
+        "giving up",
+        "doubt",
+        "distrust",
+        "unfortunate",
+        "unfortunate purchase",
+        "unfortunate",
+        "unresolved",
+        "questioning",
+        "loss of confidence",
+        "giving up",
+        "exhausted",
+        "exhausting"
+      ],
+      "weight": 1.15
+    },
+    "fear": {
+      "display_name": "Anxiety & Apprehension",
+      "keywords": [
+        "worried",
+        "anxious",
+        "scared",
+        "afraid",
+        "terrified",
+        "panic",
+        "risk",
+        "danger",
+        "uncertain",
+        "threat",
+        "dread",
+        "nervous",
+        "vulnerable",
+        "concern",
+        "confusion"
+      ],
+      "weight": 1.1
+    },
+    "joy": {
+      "display_name": "Satisfaction & Optimism",
+      "keywords": [
+        "happy",
+        "delighted",
+        "excited",
+        "excitement",
+        "grateful",
+        "satisfied",
+        "pleased",
+        "fantastic",
+        "excellent",
+        "thrilled",
+        "wonderful",
+        "successful",
+        "love",
+        "amazing",
+        "great",
+        "perfect",
+        "glad"
+      ],
+      "weight": 1.0
+    },
+    "surprise": {
+      "display_name": "Astonishment & Intrigue",
+      "keywords": [
+        "unexpected",
+        "astonished",
+        "shocked",
+        "amazed",
+        "surprised",
+        "sudden",
+        "unbelievable",
+        "startled",
+        "curious",
+        "curiosity"
+      ],
+      "weight": 0.9
+    },
+    "disgust": {
+      "display_name": "Aversion & Resentment",
+      "keywords": [
+        "revolting",
+        "disgusting",
+        "offensive",
+        "appalling",
+        "nauseating",
+        "loathsome",
+        "gross",
+        "vile",
+        "nasty",
+        "toxic",
+        "unethical"
+      ],
+      "weight": 1.15
+    },
+    "neutral": {
+      "display_name": "Calm Determination & Neutrality",
+      "keywords": [
+        "standard",
+        "overview",
+        "process",
+        "report",
+        "details",
+        "information",
+        "data",
+        "status",
+        "document",
+        "system",
+        "summary",
+        "notes",
+        "cooperate",
+        "procedure",
+        "applicable",
+        "formal"
+      ],
+      "weight": 0.8
+    }
+  },
+  "hidden_emotion_rules": [
+    {
+      "pattern": "\\b(return|refund|policy|unfortunate|procedure|straightforward|misunderstanding)\\b.*\\b(rather|hope|believe|applicable)\\b",
+      "hidden_emotion": "Calm Determination with Residual Disappointment"
+    },
+    {
+      "pattern": "\\b(cooperate|documentation|procedure|not expecting special treatment)\\b",
+      "hidden_emotion": "Calm Determination with Residual Disappointment"
+    },
+    {
+      "pattern": "\\b(fine|okay|whatever|no problem)\\b.*\\b(anyway|suppose|nevermind)\\b",
+      "hidden_emotion": "Repressed Frustration Behind Civility"
+    },
+    {
+      "pattern": "\\b(strict|rules|permission|opinion of students|management fee|cannot code)\\b",
+      "hidden_emotion": "Systemic Disillusionment & Academic Distress"
+    },
+    {
+      "pattern": "\\b(as expected|of course|naturally)\\b.*\\b(failed|delayed|wrong)\\b",
+      "hidden_emotion": "Cynical Resignation & Distrust"
+    },
+    {
+      "pattern": "\\b(urgent|asap|immediately|critical)\\b.*\\b(please|help|kindly)\\b",
+      "hidden_emotion": "Masked Panic for Timely Resolution"
+    },
+    {
+      "pattern": "\\b(sorry|apologies|my fault)\\b.*\\b(however|but|because of)\\b",
+      "hidden_emotion": "Defensive Guilt & Resentment"
+    },
+    {
+      "pattern": "\\b(hope|wish|maybe|trying|will see)\\b.*\\b(despite|failure|issue|problem)\\b",
+      "hidden_emotion": "Guarded Hope Under Extreme Fatigue"
+    }
+  ]
+}
